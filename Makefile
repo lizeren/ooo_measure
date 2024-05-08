@@ -15,6 +15,7 @@ all:
 	@echo "Specify a target: q1, q2, q3, q4, run1, run2, etc."
 
 # Specific compilation rules
+#Index:value​, Load after IF
 q1: Out_of_order1.c
 	@$(CC) $(CFLAGS) $< -o execute1
 	@printf "$(GREEN)Compilation complete: execute1$(NC)\n"
