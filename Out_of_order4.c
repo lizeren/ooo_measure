@@ -127,7 +127,7 @@ int main() {
     //     asm volatile("isb"); // Insert isb for serialization after cache flush
     // }
 
-    // temp = array1[index_by_var];
+    temp = array1[index_by_var];
 
     asm volatile("isb"); // Serialize before reading the counter
     time7 = read_pmccntr();

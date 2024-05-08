@@ -56,7 +56,9 @@ import matplotlib.pyplot as plt
 # Function to run the program and capture output
 def run_program():
     # Adjust the command if your executable requires different handling
-    result = subprocess.run(['./execute4'], capture_output=True, text=True)
+    # result = subprocess.run(['./execute4'], capture_output=True, text=True)
+    result = subprocess.run(['./spec'], capture_output=True, text=True)
+
     return result.stdout
 
 # Main function to collect data
